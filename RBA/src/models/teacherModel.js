@@ -1,19 +1,24 @@
-const teacherSchema = new mongoose.Schema({
+const mongoose = require("mongoose");
+
+
+const teacherSchema = new mongoose.Schema(
+  {
     teachername: {
-        type: String,
-        required: true,
-        unique: true
+      type: String,
+      required: true,
+      unique: true,
     },
     password: {
-        type: String,
-        required: true,
+      type: String,
+      required: true,
     },
     role: {
-        type: String,
-        required: true,
-        enum: ["admin", "student", "teacher"],
-    }
-}, { timestamps: true });
+      type: String,
+      required: true,
+      enum: ["admin", "student", "teacher"],
+    },
+  },
+  { timestamps: true },
+);
 
-   
     module.exports = mongoose.model("Teacher", teacherSchema);

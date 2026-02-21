@@ -16,9 +16,10 @@ const register = async (req, res) => {
       .status(201)
       .json({ message: `teacher registered with the name ${teachername}` });
   } catch (err) {
-    res.status(500).json({ message: `Something went wrong` });
+    console.log(err);  // add this
+    res.status(500).json({ message: err.message }); // change this
   }
-};
+}
 
 const login = async (req, res) => {
   try {
