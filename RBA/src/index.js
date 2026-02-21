@@ -10,6 +10,8 @@ app.use(express.json());
 
 // Routes
 app.use("/api/auth", authRoutes);
+//Importing the genraluserRouter
+app.use("/")
 
 // Start the server FIRST, then connect to DB
 const PORT = process.env.PORT || 3001;
