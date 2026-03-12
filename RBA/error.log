@@ -1,0 +1,45 @@
+﻿[dotenv@17.2.3] injecting env (3) from .env -- tip: ΓÜÖ∩╕Å  load multiple .env files with { path: ['.env.local', '.env'] }
+node : C:\Users\aishwarya amin\OneDrive\Desktop\R
+eact-intern-prj\RBA\node_modules\router\lib\route
+.js:228
+At line:1 char:1
++ node src/index.js 2>&1 | Out-File -FilePath 
+error.log -Encoding utf8
++ ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\ 
+   Users\aishwa...ib\route.js:228:String) [], R  
+  emoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+        throw new TypeError('argument handler 
+must be a function')
+        ^
+
+TypeError: argument handler must be a function
+    at Route.<computed> [as get] 
+(C:\Users\aishwarya amin\OneDrive\Desktop\React-i
+ntern-prj\RBA\node_modules\router\lib\route.js:22
+8:15)
+    at Router.<computed> [as get] 
+(C:\Users\aishwarya amin\OneDrive\Desktop\React-i
+ntern-prj\RBA\node_modules\router\index.js:448:19
+)
+    at Object.<anonymous> (C:\Users\aishwarya ami
+n\OneDrive\Desktop\React-intern-prj\RBA\src\route
+s\lessonRoutes.js:9:8)
+    at Module._compile 
+(node:internal/modules/cjs/loader:1688:14)
+    at Object..js 
+(node:internal/modules/cjs/loader:1820:10)
+    at Module.load 
+(node:internal/modules/cjs/loader:1423:32)
+    at Function._load 
+(node:internal/modules/cjs/loader:1246:12)
+    at TracingChannel.traceSync 
+(node:diagnostics_channel:322:14)
+    at wrapModuleLoad 
+(node:internal/modules/cjs/loader:235:24)
+    at Module.require 
+(node:internal/modules/cjs/loader:1445:12)
+
+Node.js v22.18.0
